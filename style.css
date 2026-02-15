@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* CAROUSEL */
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  
+  .carousel img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Carousel Buttons */
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Left Button */
+  #prev {
+    left: 10px;
+  }
+  
+  /* Right Button */
+  #next {
+    right: 10px;
+  }
+  
+  /* Make buttons bigger on mobile */
+  @media (max-width: 768px) {
+    .carousel button {
+      padding: 18px 22px;
+      font-size: 28px;
+    }
+  }
+  
+  
+  /* ============================= */
+  /* QUIZ STYLING */
+  /* ============================= */
+  
+  #answers button {
+    display: block;
+    margin: 0.7rem auto;
+    padding: 0.7rem 1rem;
+    width: 220px;
+    background-color: black;        /* Black background */
+    color: white;                   /* White text */
+    border: none;
+    border-radius: 25px;            /* Rounded */
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;          /* Smooth animation */
+  }
+  
+  /* Hover effect */
+  #answers button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Correct Answer */
+  #answers button.correct {
+    background-color: #28a745;      /* Green */
+  }
+  
+  /* Wrong Answer (optional but recommended) */
+  #answers button.wrong {
+    background-color: #dc3545;      /* Red */
+  }
+  
+  /* Next Button */
+  #next-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ============================= */
+  /* API SECTION */
+  /* ============================= */
+  
+  .api-section button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  /* ============================= */
+  /* FOOTER */
+  /* ============================= */
+  
+  footer {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* ============================= */
+  /* RESPONSIVE DESIGN */
+  /* ============================= */
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .carousel img {
+      max-width: 500px;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+  
+    section {
+      max-width: 900px;
+      margin: auto;
+    }
+  }
+  
